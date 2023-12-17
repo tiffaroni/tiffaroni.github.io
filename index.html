@@ -7,8 +7,7 @@
 
 
      <!-- font awesome cdn -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!--CSS Styles -->
     <link rel="stylesheet" href="assets/css/styles.css" />
@@ -42,6 +41,7 @@
         <h1>TIFFANY LIN</h1>
         <ul class = "navigation">
             <li><a href="#about" class="nav_link">About</a></li>
+            <li><a href="#experience" class="nav_link">Experience</a></li>
             <li><a href="#skills" class="nav_link">Skills</a></li>
             <li><a href="#projects" class="nav_link">Projects</a></li>
             <li><a href="#contact" class="nav_link">Contact</a></li>
@@ -54,7 +54,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero" id="about">
+    <section class="hero">
       <img
         src="assets/images/tiffany-lin.png"
         alt="tiffany-lin"
@@ -63,8 +63,8 @@
       />
       <div class="bio animate__animated animate__slideInRight">
         <p class="bio-text">Hey, I'm</p>
-        <h2 class="bio-title">
-          Tiffany Lin
+        <h2 class="bio-title" id="about">
+          <span></span>
         </h2>
       </div>
     </section>  
@@ -82,64 +82,110 @@
         I am actively seeking an internship opportunity to leverage my skills 
         and knowledge in MIS and project management. 
       </p>
-      <p>
+      <p id="experience">
         As a first-generation college student, I bring a fresh perspective and a drive to excel. 
         Proficient in HTML, CSS, and API development, I have successfully contributed to streamlined digital processes. 
         With a commitment to continuous learning and a strong work ethic, I am ready to embark on an internship journey with a team that encourages growth and fosters innovation.
       </p>
     </section>
 
-    <section class="journey" id="journey"> 
-      <div class="journey-title">
-        <h2 class="journey-header">My Journey</h2>
+
+
+
+    <section>
+        <!-- ACCORDION EXPERIENCE SECTION -->
+        <div class = "contact">
+        <h2>Experience</h2>
       </div>
-      <div class="journey-list">
-        <div class="journey-list-container">
-
-          <!-- walmart experience -->
-          <div class="journey-item">
-            <div class="journey-content">
-              <div class="icon-and-title">
-                <img src="assets/icons/icons8-walmart.svg" alt="walmart" class="icon">
-                <span class="name">Walmart </span>
-
-                <p>Systems Engineer | May 2023 - August 2023 </p>
-                <span class="collapsible-icon">
-                  <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="accordion-body">
+        <div class="accordion">
+          <div class="accordion-content">
+              <header>
+                  <span> 
+                    <img src="assets/icons/icons8-walmart.svg" alt="walmart" class="accordion-icon">
+                  </span>
+                  <span class="date">May 2023 - August 2023</span>
+                  <span class="company">Walmart</span>
+                  <span class="position">Systems Engineering Intern</span>
+                  <i class="fa-solid fa-plus"></i>
+              </header>
+              <div class="description">
+                <span>
+                  <ul style="list-style-image: url('assets/icons/icons8-flower-16.png');">
+                    <li>
+                      Orchestrated dynamic email rendering API development, consolidating 28 disparate email templates into a single, adaptable format, reducing maintenance time by 50% and increasing efficiency by 60%
+                    </li>
+                    <li>
+                      Leveraged industry-leading tools, languages, and frameworks, including HTML, CSS, JavaScript, Node.js, Nodemailer, Postman, and GitHub to enhance API functionality and facilitate robust testing and collaboration among 3 department teams
+                    </li>
+                    <li>
+                      Collaborated with 9 cross-functional teams and 30 stakeholders, employing Agile methodologies to eliminate redundancies, improve clarity, and establish standardized practices across departments
+                    </li>
+                    <li>
+                      Spearheaded application ownership standardization, removing 2 redundant applications and initiating ownership of 4 accessibility applications, reducing expenditures by 10% 
+                    </li>
+                    <li>
+                      Delivered weekly presentations to engage with more than 30 directors and team members in the Associate Digital Experience department, resulting in a 20% increase in the implementation of user-centric design principles 
+                    </li>
+                  </ul>
                 </span>
               </div>
-              
-            
-              <div class="content">
-                <p>this is an example description # 1</p>
-                <p>this is an example description # 1</p>
-                <p>this is an example description # 1</p>
-              </div>
-            </div>
           </div>
-
-          <!-- contentstack -->
-          <div class="journey-item">
-            <img src = "assets/icons/contentstack.png" alt ="contentstack">
-            <div class = "journey-content">
-              <span class ="name">Contentstack</span>
-              <span class ="collapsible-icon">
-                <i class = "fas fa-chevron-down"></i>
+          <div class="accordion-content">
+              <header>
+                <span> 
+                  <img src="assets/icons/contentstack.png" alt="contentstack" class="accordion-icon">
+                </span>
+                <span class="date">May 2022 – August 2022 </span>
+                <span class="company">Contentstack</span>
+                <span class="position">Business Development Intern</span>
+                <i class="fa-solid fa-plus"></i>
+              </header>
+              <div class="description">
+                <span>
+                  <ul style="list-style-image: url('assets/icons/icons8-flower-16.png');">
+                    <li>
+                      Utilized Salesforce, LinkedIn Sales Navigator, and ZoomInfo to generate 500+ qualified leads, contributing to a 3% increase in the overall conversion rate, using an omni-channel communication approach                  </li>
+                    <li>
+                      Refined marketing strategies, brand positioning and promotion, and unique value proposition, leading to a significant 15% increase in customer engagement                  
+                    </li>
+                
+                  </ul>
+                </span>
+              </div>
+          </div>
+          <div class="accordion-content">
+            <header>
+              <span> 
+                <img src="assets/icons/favicon-32x32.png" alt="tiffanylin" class="accordion-icon">
               </span>
-              <div class="content">
-                <p>this is an example description # 2</p>
-              </div>
+              <span class="date">February 2021 – August 2021</span>
+              <span class="company">Freelance</span>
+              <span class="position">Executive Virtual Assistant</span>
+              <i class="fa-solid fa-plus"></i>
+            </header>
+            <div class="description" id="skills">
+              <span>
+                <ul style="list-style-image: url('assets/icons/icons8-flower-16.png');">
+                  <li>
+                    Improved website user experience through explanatory text and instructions for business services and products, authoring over 15 process articles
+                  <li>
+                    Developed efficient email templates using marketing tools (ActiveCampaign and Mailchimp) to streamline marketing campaigns
+                  </li>
+                </ul>
+              </span>
             </div>
-          </div>
-
         </div>
       </div>
-
-
+      </div>
     </section>
+  
+
+    
 
     <!-- Skills section -->
-    <section class="skills" id="skills">
+    <section class="skills">
       <h2 class="skill-header">My Technical Skills</h2>
 
       <div class="skills-wrapper">
@@ -161,7 +207,7 @@
           />
         </div>
 
-        <div class="second-set animate__animated animate__pulse">
+        <div class="second-set animate__animated animate__pulse" id="projects">
           <img
             src="assets/icons/icons8-python.svg"
             alt=""
@@ -174,7 +220,7 @@
     </section>
 
     <!-- Projects section -->
-    <section class="projects" id="projects">
+    <section class="projects">
       <h2 class="projects-title">Some of my Recent Projects</h2>
       <div class="projects-container">
         <div class="project-container project-card">
@@ -326,6 +372,8 @@
         class="socicon up-arrow"
         alt="scroll-up"
     /></i>
+
+
 
     <!-- Website scripts -->
     <script src="assets/js/app.js"></script>

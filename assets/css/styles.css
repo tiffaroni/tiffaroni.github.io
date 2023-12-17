@@ -100,7 +100,7 @@ nav ul li {
   align-items: center;
   justify-content: center;
   gap: 2.5rem;
-  max-width: 68.75rem;
+  max-width: 85rem;
   margin: auto;
 }
 
@@ -111,17 +111,41 @@ nav ul li {
 
 .bio {
   text-align: center;
-  width: 25rem;
+  width: 5000px;
   padding: 0.625rem;
   border-radius: 6px;
   /* box-shadow: 0px 2px 15px 2px var(--primary-shadow); */
 }
 
 .bio h2 {
+  margin-top: 30px; 
   text-align: center;
   margin-bottom: var(--bottom-margin);
   font-size: 66px;
   color: var(--primary-color);
+}
+
+.bio h2 span {
+  position: relative;
+}
+.bio h2 span::before {
+  content: "";
+  height: 60px;
+  width: 2px;
+  position: absolute;
+  top: 50%;
+  right: -8px;
+  background: black;
+  transform: translateY(-45%);
+  animation: blink 0.7s infinite;
+}
+
+.bio h2 span.stop-blinking::before {
+  animation: none;
+}
+
+@keyframes blink {
+  50% { opacity: 0 }
 }
 
 .bio p {
@@ -448,6 +472,24 @@ footer {
     width: auto;
   }
 
+  .accordion-content header .date {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    max-width: 100px; 
+  
+  }
+
+  .accordion-content header .position{
+    /* font-size: 14px; */
+    /* font-weight: 500; */
+    color: #333;
+    /* max-width: 50px;  */
+    width: 100px; 
+
+  
+  }
+
 
 
 }
@@ -459,6 +501,11 @@ footer {
   .hero img {
     height: 30rem;
     width: 30rem;
+  }
+
+  .bio-span h2{
+    font-size: 10000px;
+
   }
 
   .bio {
@@ -477,6 +524,41 @@ footer {
     margin: 2rem auto;
     padding: 1rem;
     width: 90%;
+  }
+
+  .accordion-content header .date {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    max-width: 100%; 
+  
+  }
+  .accordion-content header .company{
+    max-width: 10px; 
+    padding-right: 10px; 
+    padding-left: 10px; 
+  
+  }
+
+  .accordion-content header .position{
+    
+    font-size: 12px; /* Adjust the font size as needed for smaller screens */
+    max-width: none; /* Remove the max-width restriction if necessary */
+    width: 100%; /* Allow the text to take up the full width on smaller screens */
+  
+    
+
+
+  
+  }
+
+  .accordion-content header .title{
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    max-width: 250px; 
+    /* min-width: 50px;  */
+    width: 50px; 
   }
 } 
 
@@ -642,6 +724,127 @@ footer {
 }
 
 
+
+
+.accordion-body{
+    min-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #E3F2FD;
+    padding: 30px; 
+}
+.accordion{
+    max-width: none;
+    width: 100%;
+    background: #FFF;
+    margin: 0 15px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow:  0 0 4px rgba(0,0,0,0.2);
+}
+.accordion .accordion-content{
+    margin: 10px 0;
+    border-radius: 4px;
+    background: #FFF7F0;
+    border: 1px solid #FFD6B3;
+    overflow: hidden;
+}
+.accordion-content:nth-child(2){
+    background-color: #F0FAFF;
+    border-color: #CCEEFF;
+}
+.accordion-content:nth-child(3){
+    background-color: #FFF0F3;
+    border-color: #FFCCD6;
+}
+.accordion-content:nth-child(4){
+    background-color: #F0F0FF;
+    border-color: #CCCCFF;
+}
+.accordion-content.open{
+    padding-bottom: 50px;
+}
+.accordion-content header{
+    display: flex;
+    min-height: 50px;
+    padding: 0 15px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.2s linear;
+}
+.accordion-content.open header{
+    min-height: 100px;
+}
+
+.accordion-content header .title{
+  /* font-size: 14px; */
+  /* font-weight: 500; */
+  color: #333;
+  max-width: 250px; 
+  /* min-width: 50px;  */
+  width: 300px; 
+}
+
+.accordion-content header .company {
+    /* font-size: 14px; */
+    /* font-weight: 500; */
+    color: #333;
+    max-width: 150px; 
+    /* min-width: 50px;  */
+    width: 100%; 
+
+}
+
+.accordion-content header .position{
+  /* font-size: 14px; */
+  /* font-weight: 500; */
+  color: #333;
+  max-width: 300px; 
+  /* min-width: 50px;  */
+  width: 100%; 
+}
+
+.accordion-content header i{
+    font-size: 15px;
+    color: #333;
+}
+.accordion-content .description{
+    height: 0;
+    /* font-size: 12px; */
+    color: #333;
+    font-weight: 400;
+    padding: 0 15px;
+    transition: all 0.2s linear;
+}
+.accordion-body h2 {
+  text-align: center;
+  margin-bottom: var(--bottom-margin-2);
+}
+.accordion-content header .date {
+  /* font-size: 14px; */
+  /* font-weight: 500; */
+  color: #333;
+  max-width: 220px; 
+  width: 100%; 
+  /* max-width: 100px;  */
+  padding-right: 12px; 
+
+}
+
+.accordion-icon {
+  max-width: 150px;
+  width: 30px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px; 
+  padding-right: 5px; 
+}
+
+.accordion-content ul {
+  margin-left: 50px; 
+}
 
 
 
