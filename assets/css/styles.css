@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
 
 /* Variables */
 :root {
@@ -7,10 +8,10 @@
   --bold-font: 700;
   --bolder-font: 900;
   --bg-color: #fcfcfc;
-  --primary-color: #4756df;
-  --secondary-color: #ff7235;
-  --primary-shadow: #8b8eaf;
-  --secondary-shadow: #a17a69;
+  --primary-color: #617E89;
+  --secondary-color: #9AC2d2;
+  --primary-shadow: #A2A6AD;
+  --secondary-shadow: #82635D;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
@@ -109,24 +110,39 @@ nav ul li {
 }
 
 .bio {
+  text-align: center;
   width: 25rem;
   padding: 0.625rem;
   border-radius: 6px;
-  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  /* box-shadow: 0px 2px 15px 2px var(--primary-shadow); */
 }
 
-.bio h1 {
+.bio h2 {
+  text-align: center;
   margin-bottom: var(--bottom-margin);
+  font-size: 66px;
+  color: var(--primary-color);
 }
 
 .bio p {
   line-height: var(--line-height);
   padding: 0.3rem 0;
+  font-size: 30px;
+
 }
 
 .more-about {
+  /* margin-top: 30px;
   background-color: var(--bg-color);
-  padding: 1rem 6rem;
+  padding: 1rem 6rem; */
+  /* Add the following styles to center the container */
+  margin: 2rem auto;
+  width: 90%;
+
+  /* width: 25rem; */
+  padding: 0.625rem;
+  border-radius: 6px;
+  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 }
 
 /* more about me section */
@@ -152,12 +168,13 @@ nav ul li {
 }
 
 .skills-wrapper img {
-  padding: 1.25rem;
+  padding: .25rem;
 }
 
 .icon {
-  width: 11.875rem;
-  height: 11.25rem;
+  width: 12rem;
+  height: 12rem;
+  margin-right: 1rem;
 }
 
 .icon-card {
@@ -252,6 +269,7 @@ nav ul li {
 
 .contact-form-container .input-field {
   width: 100%;
+  padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 5px;
@@ -353,7 +371,7 @@ footer {
   /* make the hero section flex direction of column */
 
   .hero {
-    margin-top: -4rem;
+    margin-top: 4rem;
     flex-direction: column;
     gap: 0;
   }
@@ -361,22 +379,24 @@ footer {
   /* reduce the width and height of the image */
 
   .hero img {
-        height: 37.5rem;
+        height: 30rem;
         width: 30rem;
     }
 
   /* make the bio text readable */
 
   .bio {
-    margin-top: -7rem;
+    margin-top: 2rem;
     width: 20.5rem;
   }
 
   /* move the more about section down a little bit and increase the padding on all sides */
 
   .more-about {
-    margin-top: 2rem;
-    padding: 1rem 3.5rem;
+    /* Adjust the margin and padding as needed for centering on smaller screens */
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 90%;
   }
 
   /* align to the center and justify the text */
@@ -410,6 +430,26 @@ footer {
     max-width: 23.75rem;
   }
 
+
+  .journey-list-container {
+    /* Adjust the margin and padding as needed for centering on smaller screens */
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 20.875rem;
+  }
+
+  .journey-item {
+    /* Adjust the margin and padding as needed for centering on smaller screens */
+    margin: 2rem auto;
+    padding: 1rem;
+    width: auto;
+  }
+  .journey {
+    width: auto;
+  }
+
+
+
 }
 
 /* fixing somethigns on an even smaller screen
@@ -417,8 +457,8 @@ footer {
  * reduced thewidth of the bio text, the project container, and the contact form container */
 @media screen and (max-width: 420px) {
   .hero img {
-    height: 37.5rem;
-    width: 23rem;
+    height: 30rem;
+    width: 30rem;
   }
 
   .bio {
@@ -432,5 +472,178 @@ footer {
   .contact-form-container {
     max-width: 17.75rem;
   }
+  .journey-item {
+    /* Adjust the margin and padding as needed for centering on smaller screens */
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 90%;
+  }
 } 
+
+
+#journey {
+  text-align: center; 
+  width: auto; 
+}
+
+
+.journey-title {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    height: 200px;
+}
+.journey-title h1{
+    font-size: 2.4rem;
+    margin-top: 2rem;
+    text-transform: capitalize;
+}
+.journey-title p{
+    font-weight: 400;
+    opacity: 0.7;
+    max-width: 500px;
+    margin: 0.6rem auto 0 auto;
+    line-height: 1.6;
+}
+.journey-list{
+    background-color: var(--secondary-color);
+    align-items: center;
+}
+.journey-list-container{
+    width: auto;
+    height: auto ; 
+    margin: -120px auto 0 auto;
+    padding: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: block;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+}
+
+.journey-item {
+  margin: 1rem;
+  /* max-width: 400px; */
+  width: auto;
+  height: auto;
+  background-color: #fff;
+  /* makes the edges round */
+  border-radius: 1.2rem; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 8px 0 rgba(35, 35, 35, 0.2);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+
+} 
+
+
+
+
+
+.icon-and-title {
+  display: flex;
+  align-items: center;
+  
+}
+
+
+
+
+
+.journey-item img {
+  height: 80px; /* Adjust the height as needed */
+  /* margin: 0.4rem; */
+}
+
+.journey-content {
+  /* text-align: center;
+  padding: 1rem;
+  align-items: center;
+  display: inline;  */
+
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.name {
+  font-weight: 700;
+  font-size: 1.2rem;
+  display: block;
+  margin-right: 1rem;
+}
+
+
+
+
+.journey-item:hover{
+    -webkit-box-shadow: 0 0 18px 0 rgba(35, 35, 35, 0.3);
+            box-shadow: 0 0 18px 0 rgba(35, 35, 35, 0.3);
+}
+
+.content{
+    height: 0;
+    overflow-y: scroll;
+    -webkit-transition: height 0.3s ease-in-out;
+    -o-transition: height 0.3s ease-in-out;
+    transition: height 0.3s ease-in-out;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    justify-items: left;
+    justify-content: left;
+    align-items: left;
+}
+.content p{
+    font-size: 0.95rem;
+    line-height: 1.6;
+    opacity: 0.9;
+    margin: 0.4rem;
+    justify-items: left;
+    justify-content: left;
+    align-items: left;
+}
+.content::-webkit-scrollbar{
+    width: 6px;
+}
+.content::-webkit-scrollbar-track{
+    background: transparent;
+}
+.content::-webkit-scrollbar-thumb{
+    background-color: #e4dada;
+    border-radius: 4px;
+}
+.content-show{
+    height: 100px; /*js related*/
+}
+
+.collapsible-icon{
+    display: block;
+    margin-top: 0.4rem;
+    margin-left: 5rem; 
+    cursor: pointer;
+    font-size: 1.2rem;
+    -webkit-transition: color 0.2s ease-in-out;
+    -o-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+}
+.collapsible-icon:hover{
+    color: #bc1823;
+}
+
+
+
+
+
+
 

@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+
+     <!-- font awesome cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <!--CSS Styles -->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
@@ -51,83 +56,118 @@
     <!-- Hero Section -->
     <section class="hero" id="about">
       <img
-        src="assets/images/wfh_1.svg"
+        src="assets/images/tiffany-lin.png"
         alt="tiffany-lin"
         loading="lazy"
         class="hero-img"
       />
       <div class="bio animate__animated animate__slideInRight">
-        <h2 class="bio-title">About Me</h2>
-        <p class="bio-text">
-          This is the about me section (EDIT LATER)! 
-        </p>
+        <p class="bio-text">Hey, I'm</p>
+        <h2 class="bio-title">
+          Tiffany Lin
+        </h2>
       </div>
     </section>  
 
     <!-- More about -->
     <section class="more-about">
-      <h2>More About Me</h2>
+      <h2>About Me</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-        nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
-        autem deleniti cupiditate molestias quis unde quae totam porro dicta
-        iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
+        I'm a senior at The University of Texas at Austin, McCombs Business School, studying 
+        Management Information Systems (MIS). I am also pursuing a certificate in Elements of Computing 
+        and a minor in Chinese. 
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
-        nostrum dolor minus, libero delectus praesentium perferendis
+        Passionate about pursuing a career in technology, 
+        I am actively seeking an internship opportunity to leverage my skills 
+        and knowledge in MIS and project management. 
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
-        consequuntur labore? Ea totam voluptas amet!
+        As a first-generation college student, I bring a fresh perspective and a drive to excel. 
+        Proficient in HTML, CSS, and API development, I have successfully contributed to streamlined digital processes. 
+        With a commitment to continuous learning and a strong work ethic, I am ready to embark on an internship journey with a team that encourages growth and fosters innovation.
       </p>
+    </section>
+
+    <section class="journey" id="journey"> 
+      <div class="journey-title">
+        <h2 class="journey-header">My Journey</h2>
+      </div>
+      <div class="journey-list">
+        <div class="journey-list-container">
+
+          <!-- walmart experience -->
+          <div class="journey-item">
+            <div class="journey-content">
+              <div class="icon-and-title">
+                <img src="assets/icons/icons8-walmart.svg" alt="walmart" class="icon">
+                <span class="name">Walmart </span>
+
+                <p>Systems Engineer | May 2023 - August 2023 </p>
+                <span class="collapsible-icon">
+                  <i class="fas fa-chevron-down"></i>
+                </span>
+              </div>
+              
+            
+              <div class="content">
+                <p>this is an example description # 1</p>
+                <p>this is an example description # 1</p>
+                <p>this is an example description # 1</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- contentstack -->
+          <div class="journey-item">
+            <img src = "assets/icons/contentstack.png" alt ="contentstack">
+            <div class = "journey-content">
+              <span class ="name">Contentstack</span>
+              <span class ="collapsible-icon">
+                <i class = "fas fa-chevron-down"></i>
+              </span>
+              <div class="content">
+                <p>this is an example description # 2</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
     </section>
 
     <!-- Skills section -->
     <section class="skills" id="skills">
-      <h2 class="skill-header">My Top Skills</h2>
+      <h2 class="skill-header">My Technical Skills</h2>
 
       <div class="skills-wrapper">
         <div class="first-set animate__animated animate__pulse">
           <!-- "lazy" this means that the pictures only load when the the user scrolls to the section -->
           <img
-            src="assets/icons/icons8-html-5.svg"
+            src="assets/icons/icons8-swift.svg"
             alt=""
             loading="lazy"
             class="icon icon-card"
+            title="Swift"
           />
           <img
-            src="assets/icons/icons8-css3.svg"
+            src="assets/icons/icons8-excel.svg"
             alt=""
             loading="lazy"
             class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-javascript.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
+            title="Excel"
           />
         </div>
 
         <div class="second-set animate__animated animate__pulse">
           <img
-            src="assets/icons/icons8-bootstrap.svg"
+            src="assets/icons/icons8-python.svg"
             alt=""
             loading="lazy"
             class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-react-native.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-git.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
+            title="Python"
           />
         </div>
       </div>
@@ -187,11 +227,11 @@
 
     <!-- Contact section -->
     <section class="contact" id="contact">
-      <h2>Get In Touch With Me</h2>
+      <h2>Let's Chat!</h2>
       <div class="contact-form-container">
         <div class="contact-form">
           <!--TODO: CHANGE THE FORMSPREE-->
-          <form action="https://formspree.io/f/xyylngw" method="POST">
+          <form action="https://formspree.io/f/xayrwylj" method="POST">
             <div class="form-control">
               <label for="name">Name</label>
               <input
@@ -237,50 +277,52 @@
       </div>
     </section>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- Social accounts - Fixed to the right -->
     <div class="socials">
-      <a href="#" target="_blank"
-        ><img
-          src="assets/icons/icons8-twitter-circled.gif"
-          alt="Twitter"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="#" target="_blank"
-        ><img
-          src="assets/icons/icons8-instagram.gif"
-          alt="Instagram"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="#" target="_blank"
+      <a href="https://www.linkedin.com/in/tiffanylintx/" target="_blank"
         ><img
           src="assets/icons/icons8-linkedin-circled.gif"
           alt="Linkedin"
           loading="lazy"
           class="socicon"
       /></a>
-      <a href="#" target="_blank"
+      <a href="https://github.com/tiffaroni" target="_blank"
         ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
       /></a>
     </div>
 
     <!-- Footer section -->
     <footer>
-      <p class="copy">&copy; Copyright 2021</p>
+      <p class="copy">&copy; Copyright 2023</p>
       <p class="copy">
         Built with &#x2661; by
-        <a href="https://twitter.com/koladechris" target="_blank"
-          >Kolade Chris (Ksound)</a
+        <a href="https://www.linkedin.com/in/tiffanylintx/" target="_blank"
+          >Tiffany Lin</a
         >
       </p>
     </footer>
 
     <!-- adding the scroll up button-->
-    
+
     <i class="scroll-up" id="scroll-up"
       ><img
-        src="assets/icons/icons8-upward-arrow.gif"
+        src="assets/icons/icons8-double-up.gif"
         class="socicon up-arrow"
         alt="scroll-up"
     /></i>
