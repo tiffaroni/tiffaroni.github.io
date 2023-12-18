@@ -4,27 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-
-     <!-- font awesome cdn -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <!--CSS Styles -->
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Tiffany Lin | SWE</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <!-- type writer effect -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
     <!-- Favicons -->
     <!-- this is the tiny icon that is on the tab  -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="assets/icons/apple-touch-icon.png"
+      href="assets/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="assets/icons/favicon-32x32.png"
+      href="assets/favicon-32x32.png"
     />
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 
     <!-- Animate CSS CDN -->
     <!-- in order to be able to use the animations-->
@@ -32,248 +34,415 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <title>Tiffany Lin | SWE</title>
+
   </head>
-
   <body>
-    <!-- Navbar -->
-    <nav>
-        <h1>TIFFANY LIN</h1>
-        <ul class = "navigation">
-            <li><a href="#about" class="nav_link">About</a></li>
-            <li><a href="#experience" class="nav_link">Experience</a></li>
-            <li><a href="#skills" class="nav_link">Skills</a></li>
-            <li><a href="#projects" class="nav_link">Projects</a></li>
-            <li><a href="#contact" class="nav_link">Contact</a></li>
+    <nav id="desktop-nav">
+      <div class="logo"><a href="https://tiffaroni.github.io/" class="logo">Tiffany Lin</a>
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills-section">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-        <!-- this shows the bars for toggling the nav menu on mobile (hamburger menu)-->
-        <!-- it will be shown on mobile but hidden on desktop-->
-        <button class="burger-menu" id="burger-menu">
-            <ion-icon class="bars" name="menu-outline"></ion-icon>
-        </button>
+      </div>
     </nav>
-
-    <!-- Hero Section -->
-    <section class="hero">
-      <img
-        src="assets/images/tiffany-lin.png"
-        alt="tiffany-lin"
-        loading="lazy"
-        class="hero-img"
-      />
-      <div class="bio animate__animated animate__slideInRight">
-        <p class="bio-text">Hey, I'm</p>
-        <h2 class="bio-title" id="about">
+    <nav id="hamburger-nav">
+      <div class="logo">Tiffany Lin</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
-        </h2>
-      </div>
-    </section>  
-
-    <!-- More about -->
-    <section class="more-about">
-      <h2>About Me</h2>
-      <p>
-        I'm a senior at The University of Texas at Austin, McCombs Business School, studying 
-        Management Information Systems (MIS). I am also pursuing a certificate in Elements of Computing 
-        and a minor in Chinese. 
-      </p>
-      <p>
-        Passionate about pursuing a career in technology, 
-        I am actively seeking an internship opportunity to leverage my skills 
-        and knowledge in MIS and project management. 
-      </p>
-      <p id="experience">
-        As a first-generation college student, I bring a fresh perspective and a drive to excel. 
-        Proficient in HTML, CSS, and API development, I have successfully contributed to streamlined digital processes. 
-        With a commitment to continuous learning and a strong work ethic, I am ready to embark on an internship journey with a team that encourages growth and fosters innovation.
-      </p>
-    </section>
-
-
-
-
-    <section>
-        <!-- ACCORDION EXPERIENCE SECTION -->
-        <div class = "contact">
-        <h2>Experience</h2>
-      </div>
-      </div>
-      <div class="accordion-body">
-        <div class="accordion">
-          <div class="accordion-content">
-              <header>
-                  <span> 
-                    <img src="assets/icons/icons8-walmart.svg" alt="walmart" class="accordion-icon">
-                  </span>
-                  <span class="date">May 2023 - August 2023</span>
-                  <span class="company">Walmart</span>
-                  <span class="position">Systems Engineering Intern</span>
-                  <i class="fa-solid fa-plus"></i>
-              </header>
-              <div class="description">
-                <span>
-                  <ul style="list-style-image: url('assets/icons/icons8-flower-16.png');">
-                    <li>
-                      Orchestrated dynamic email rendering API development, consolidating 28 disparate email templates into a single, adaptable format, reducing maintenance time by 50% and increasing efficiency by 60%
-                    </li>
-                    <li>
-                      Leveraged industry-leading tools, languages, and frameworks, including HTML, CSS, JavaScript, Node.js, Nodemailer, Postman, and GitHub to enhance API functionality and facilitate robust testing and collaboration among 3 department teams
-                    </li>
-                    <li>
-                      Collaborated with 9 cross-functional teams and 30 stakeholders, employing Agile methodologies to eliminate redundancies, improve clarity, and establish standardized practices across departments
-                    </li>
-                    <li>
-                      Spearheaded application ownership standardization, removing 2 redundant applications and initiating ownership of 4 accessibility applications, reducing expenditures by 10% 
-                    </li>
-                    <li>
-                      Delivered weekly presentations to engage with more than 30 directors and team members in the Associate Digital Experience department, resulting in a 20% increase in the implementation of user-centric design principles 
-                    </li>
-                  </ul>
-                </span>
-              </div>
-          </div>
-          <div class="accordion-content">
-              <header>
-                <span> 
-                  <img src="assets/icons/contentstack.png" alt="contentstack" class="accordion-icon">
-                </span>
-                <span class="date">May 2022 – August 2022 </span>
-                <span class="company">Contentstack</span>
-                <span class="position">Business Development Intern</span>
-                <i class="fa-solid fa-plus"></i>
-              </header>
-              <div class="description">
-                <span>
-                  <ul style="list-style-image: url('assets/icons/icons8-flower-16.png');">
-                    <li>
-                      Utilized Salesforce, LinkedIn Sales Navigator, and ZoomInfo to generate 500+ qualified leads, contributing to a 3% increase in the overall conversion rate, using an omni-channel communication approach                  </li>
-                    <li>
-                      Refined marketing strategies, brand positioning and promotion, and unique value proposition, leading to a significant 15% increase in customer engagement                  
-                    </li>
-                
-                  </ul>
-                </span>
-              </div>
-          </div>
-          <div class="accordion-content">
-            <header>
-              <span> 
-                <img src="assets/icons/favicon-32x32.png" alt="tiffanylin" class="accordion-icon">
-              </span>
-              <span class="date">February 2021 – August 2021</span>
-              <span class="company">Freelance</span>
-              <span class="position">Executive Virtual Assistant</span>
-              <i class="fa-solid fa-plus"></i>
-            </header>
-            <div class="description" id="skills">
-              <span>
-                <ul style="list-style-image: url('assets/icons/icons8-flower-16.png');">
-                  <li>
-                    Improved website user experience through explanatory text and instructions for business services and products, authoring over 15 process articles
-                  <li>
-                    Developed efficient email templates using marketing tools (ActiveCampaign and Mailchimp) to streamline marketing campaigns
-                  </li>
-                </ul>
-              </span>
-            </div>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#skills-section" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/tiffany-lin.PNG" alt="Tiffany Lin profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title" id="app">Tiffany Lin</h1>
+        <p class="section__text__p2">Software Developer</p>
+        <div class="btn-container">
+          <!-- TODO: Change resume later -->
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/TiffanyLin_Resume2023.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="window.open('https://linkedin.com/in/tiffanylintx', '_blank')"
+            />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="window.open('https://github.com/tiffaroni', '_blank')"
+            />
+        </div>
       </div>
     </section>
-  
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/tiffanylin_bw.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Management Information Systems</h3>
+              <p>Expected Graduation: Dec 2024</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>The University of Texas - Austin</h3>
+              <p>McCombs School of Business</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I'm a senior at The University of Texas at Austin, McCombs Business School, studying 
+              Management Information Systems (MIS). I am also pursuing a certificate in Elements of Computing 
+              and a minor in Chinese. </br></br>
+            </p>
+            <p>
+              Passionate about pursuing a career in technology, 
+              I am actively seeking an internship opportunity to leverage my skills 
+              and knowledge in MIS and project management.</br></br>
+            </p>
+            <p>
+              As a first-generation college student, I bring a fresh perspective and a drive to excel. 
+              Proficient in HTML, CSS, and API development, I have successfully contributed to streamlined digital processes. 
+              With a commitment to continuous learning and a strong work ethic, I am ready to embark on an internship journey 
+              with a team that encourages growth and fosters innovation. </br>
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
 
-    
+
+<!-- EXPERIENCE SECTION -->
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+
+
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+                <div class="accordion-content">
+                    <header>
+                        <span> 
+                          <img src="assets/icons8-walmart.svg" alt="walmart" class="accordion-icon">
+                        </span>
+                        <span class="date">May 2023 - Aug 2023</span>
+                        <span class="company">Walmart</span>
+                        <span class="position">Systems Engineering Intern</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </header>
+                    <div class="description">
+                      <span>
+                        <ul>
+                          <li>
+                            Orchestrated dynamic email rendering API development, consolidating 28 disparate email templates into a single, adaptable format, reducing maintenance time by 50% and increasing efficiency by 60%
+                          </li>
+                          <li>
+                            Leveraged industry-leading tools, languages, and frameworks, including HTML, CSS, JavaScript, Node.js, Nodemailer, Postman, and GitHub to enhance API functionality and facilitate robust testing and collaboration among 3 department teams
+                          </li>
+                          <li>
+                            Collaborated with 9 cross-functional teams and 30 stakeholders, employing Agile methodologies to eliminate redundancies, improve clarity, and establish standardized practices across departments
+                          </li>
+                          <li>
+                            Spearheaded application ownership standardization, removing 2 redundant applications and initiating ownership of 4 accessibility applications, reducing expenditures by 10% 
+                          </li>
+                          <li>
+                            Delivered weekly presentations to engage with more than 30 directors and team members in the Associate Digital Experience department, resulting in a 20% increase in the implementation of user-centric design principles 
+                          </li>
+                        </ul>
+                      </span>
+                    </div>
+                </div>
+                <div class="accordion-content">
+                    <header>
+                      <span> 
+                        <img src="assets/contentstack.png" alt="contentstack" class="accordion-icon">
+                      </span>
+                      <span class="date">May 2022 – Aug 2022 </span>
+                      <span class="company">Contentstack</span>
+                      <span class="position">Business Development Intern</span>
+                      <i class="fa-solid fa-plus"></i>
+                    </header>
+                    <div class="description">
+                      <span>
+                        <ul>
+                          <li>
+                            Utilized Salesforce, LinkedIn Sales Navigator, and ZoomInfo to generate 500+ qualified leads, contributing to a 3% increase in the overall conversion rate, using an omni-channel communication approach                  </li>
+                          <li>
+                            Refined marketing strategies, brand positioning and promotion, and unique value proposition, leading to a significant 15% increase in customer engagement                  
+                          </li>
+                      
+                        </ul>
+                      </span>
+                    </div>
+                </div>
+                <div class="accordion-content">
+                  <header>
+                    <span> 
+                      <img src="assets/favicon-32x32.png" alt="tiffanylin" class="accordion-icon">
+                    </span>
+                    <span class="date">Feb 2021 – Aug 2021</span>
+                    <span class="company">Freelance</span>
+                    <span class="position">Executive Virtual Assistant</span>
+                    <i class="fa-solid fa-plus"></i>
+                  </header>
+                  <div class="description" id="skills">
+                    <span>
+                      <ul>
+                        <li>
+                          Improved website user experience through explanatory text and instructions for business services and products, authoring over 15 process articles
+                        <li>
+                          Developed efficient email templates using marketing tools (ActiveCampaign and Mailchimp) to streamline marketing campaigns
+                        </li>
+                      </ul>
+                    </span>
+                  </div>
+              </div>
+            
+
+
+
+        
+             
+              
+              
+              
+              
+          </div>
+        </div>
+      </div>
+        <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills-section'"
+      />
+ 
+
+      
+    </section>
+
+
+
+
 
     <!-- Skills section -->
-    <section class="skills">
-      <h2 class="skill-header">My Technical Skills</h2>
+    <section class="skills"id="skills-section" >
+      <p class="section__text__p1">Here Are My</p>
+      <h1 class="title">Technical Skills</h1>
+
 
       <div class="skills-wrapper">
-        <div class="first-set animate__animated animate__pulse">
+        <div class="first-set animate__animated animate__pulse" >
           <!-- "lazy" this means that the pictures only load when the the user scrolls to the section -->
           <img
-            src="assets/icons/icons8-swift.svg"
+            src="assets/icons8-swift.svg"
             alt=""
             loading="lazy"
-            class="icon icon-card"
+            class="skill-icon icon-card"
             title="Swift"
           />
           <img
-            src="assets/icons/icons8-excel.svg"
+            src="assets/icons8-excel.svg"
             alt=""
             loading="lazy"
-            class="icon icon-card"
+            class="skill-icon icon-card"
             title="Excel"
           />
         </div>
 
-        <div class="second-set animate__animated animate__pulse" id="projects">
+        <div class="second-set animate__animated animate__pulse">
           <img
-            src="assets/icons/icons8-python.svg"
+            src="assets/icons8-python.svg"
             alt=""
             loading="lazy"
-            class="icon icon-card"
+            class="skill-icon icon-card"
             title="Python"
           />
         </div>
       </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
     </section>
 
-    <!-- Projects section -->
-    <section class="projects">
-      <h2 class="projects-title">Some of my Recent Projects</h2>
-      <div class="projects-container">
-        <div class="project-container project-card">
-          <img
-            src="assets/images/expenseTracker.png"
-            alt="expense-tracker"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Expense Tracker</h3>
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
+
+
+
+
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
         </div>
-        <div class="project-container project-card">
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
           <img
-            src="assets/images/netflixClone.png"
-            alt="netflic-clone"
-            loading="lazy"
-            class="project-pic"
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
           />
-          <h3 class="project-title">Netflix Clone</h3>
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
+          <p><a href="mailto:tiffanylin757@gmail.com">tiffanylin757@gmail.com</a></p>
         </div>
-        <div class="project-container project-card">
+        <div class="contact-info-container">
           <img
-            src="assets/images/greenyEarth.png"
-            alt="greeny-earth"
-            loading="lazy"
-            class="project-pic"
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
           />
-          <h3 class="project-title">Greeny Earth</h3>
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
+          <p><a href="https://www.linkedin.com/in/tiffanylintx">LinkedIn</a></p>
         </div>
       </div>
     </section>
 
+
+
+
+
     <!-- Contact section -->
-    <section class="contact" id="contact">
-      <h2>Let's Chat!</h2>
       <div class="contact-form-container">
         <div class="contact-form">
           <!--TODO: CHANGE THE FORMSPREE-->
@@ -316,76 +485,32 @@
               type="submit"
               value="Submit"
               id="submit-btn"
-              class="submit-btn"
+              class="btn btn-color-2"
+              style="display: block; margin: 0 auto; width: 100%;"
             />
           </form>
         </div>
       </div>
-    </section>
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Social accounts - Fixed to the right -->
-    <div class="socials">
-      <a href="https://www.linkedin.com/in/tiffanylintx/" target="_blank"
-        ><img
-          src="assets/icons/icons8-linkedin-circled.gif"
-          alt="Linkedin"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="https://github.com/tiffaroni" target="_blank"
-        ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
-      /></a>
-    </div>
-
-    <!-- Footer section -->
+    
     <footer>
-      <p class="copy">&copy; Copyright 2023</p>
-      <p class="copy">
-        Built with &#x2661; by
-        <a href="https://www.linkedin.com/in/tiffanylintx/" target="_blank"
-          >Tiffany Lin</a
-        >
-      </p>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills-section">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Tiffany Lin. All Rights Reserved.</p>
     </footer>
-
-    <!-- adding the scroll up button-->
-
-    <i class="scroll-up" id="scroll-up"
-      ><img
-        src="assets/icons/icons8-double-up.gif"
-        class="socicon up-arrow"
-        alt="scroll-up"
-    /></i>
-
-
-
-    <!-- Website scripts -->
-    <script src="assets/js/app.js"></script>
-
-    <!-- Ion icons scripts -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+    <script src="script.js"></script>
   </body>
 </html>
